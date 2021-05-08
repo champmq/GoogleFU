@@ -1,5 +1,5 @@
 # GoogleFU
-A tool which sorts out information found on Google.
+A tool that sorts out the information found on Google. <br>
 It sorts them into 6 categorys (this can change anytime):
  - Socials
  - Pastes
