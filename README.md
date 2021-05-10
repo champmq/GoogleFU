@@ -6,6 +6,8 @@ It sorts them into 6 categorys (this can change anytime):
  - Ratings
  - Blogs
  - Hacking
+ - Programming
+ - Images
  - Other
 
 <br>
