@@ -1,0 +1,5 @@
+.idea
+venv
+.google-cookie
+modules/__pycache__/search.cpython-38.pyc
+modules/__pycache__/sort.cpython-38.pyc

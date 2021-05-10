@@ -2,8 +2,16 @@ from googlesearch import search as gsearch
 
 
 class Search:
-    def __init__(self, query):
-        self.query = query
+    """
+    Search class
+    """
+    def __init__(self, query="") -> None:
+        """Constructor
 
-    def urls(self):
+        Args:
+            query (str, optional): Query to look up. Defaults to.
+        """
+        self.query: str = query
+
+    def urls(self) -> list:
         return gsearch(f'"{self.query}"')
