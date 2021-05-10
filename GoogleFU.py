@@ -21,15 +21,6 @@ print(banner +
 query = input("Query: ")
 urls = Search(query).urls()
 sorted_urls = Sort(urls).sort()
-if sorted_urls["socials"]:
-    print("Socials: " + ", ".join(sorted_urls["socials"]))
-if sorted_urls["pastes"]:
-    print("Pastes: " + ", ".join(sorted_urls["pastes"]))
-if sorted_urls["ratings"]:
-    print("Ratings: " + ", ".join(sorted_urls["ratings"]))
-if sorted_urls["blogs"]:
-    print("Blogs: " + ", ".join(sorted_urls["blogs"]))
-if sorted_urls["hacking"]:
-    print("Hacking: " + ", ".join((sorted_urls["hacking"])))
-if sorted_urls["other"]:
-    print("Other: " + ", ".join(sorted_urls["other"]))
+for item in sorted_urls:
+    if sorted_urls[item]:
+        print(item.capitalize() + ": " + ", ".join(sorted_urls[item]))
